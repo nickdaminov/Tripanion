@@ -1,0 +1,27 @@
+<h1>Having I new Idea for a trip ? It starts here </h1>
+
+<%= form_for :trip, url: trips_path do |f| %>
+  <p>
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </p>
+
+  <p>
+    <%= f.label :time %><br>
+    <%= f.text_field :time %>
+  </p>
+
+  <p>
+    <%= f.label :travel %><br>
+    <%= f.text_area :travel %>
+  </p>
+
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

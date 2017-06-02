@@ -1,0 +1,16 @@
+<h1>Browsing Trips</h1>
+
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Time</th>
+  </tr>
+
+  <% @trip.each do |trip| %>
+    <tr>
+      <td><%= trip.location %></td>
+      <td><%= trip.time %></td>
+      <td><%= link_to 'Show', trip_path(trip) %></td>
+    </tr>
+  <% end %>
+</table>
