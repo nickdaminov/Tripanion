@@ -1,6 +1,7 @@
-<h1>Having I new Idea for a trip ? It starts here </h1>
+<h1>Edit Trip</h1>
 
-<%= form_for :trip, url: trips_path do |f| %>
+<%= form_for(@trip) do |f| %>
+
   <p>
     <%= f.label :location %><br>
     <%= f.text_field :location %>
@@ -24,4 +25,7 @@
   <p>
     <%= f.submit %>
   </p>
+
 <% end %>
+
+<%= link_to 'Back', trip_path %>

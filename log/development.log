@@ -1001,3 +1001,265 @@ Processing by TripsController#show as HTML
 Completed 200 OK in 44ms (Views: 38.8ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/trips" for 127.0.0.1 at 2017-06-02 02:19:55 +0100
+  
+SyntaxError (/Users/zuyvu/Tripanion/app/controllers/trips_controller.rb:36: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/trips_controller.rb:36: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2017-06-02 02:19:58 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 50ms (Views: 47.1ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2017-06-02 02:20:00 +0100
+  
+SyntaxError (/Users/zuyvu/Tripanion/app/controllers/trips_controller.rb:36: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/trips_controller.rb:36: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/trips" for 127.0.0.1 at 2017-06-02 02:20:20 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/zuyvu/Tripanion/app/controllers/trips_controller.rb:36: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/trips_controller.rb:36: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2017-06-02 02:20:22 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 238ms (Views: 229.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-02 02:20:25 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2017-06-02 02:20:26 +0100
+  
+SyntaxError (/Users/zuyvu/Tripanion/app/controllers/trips_controller.rb:36: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/trips_controller.rb:36: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/trips" for 127.0.0.1 at 2017-06-02 02:22:54 +0100
+  
+SyntaxError (/Users/zuyvu/Tripanion/app/controllers/trips_controller.rb:36: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/trips_controller.rb:36: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2017-06-02 02:22:56 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/new" for 127.0.0.1 at 2017-06-02 02:23:00 +0100
+  
+SyntaxError (/Users/zuyvu/Tripanion/app/controllers/trips_controller.rb:36: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/trips_controller.rb:36: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/trips/new" for 127.0.0.1 at 2017-06-02 02:25:42 +0100
+Processing by TripsController#new as HTML
+  Rendering trips/new.html.erb within layouts/application
+  Rendered trips/new.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 63ms (Views: 60.4ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2017-06-02 02:27:46 +0100
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0I+VdadVYwAOm/3b6ZnzNk0wADawQmyyzlUguX/n0hGKGffuxqLyduGq88h7v0nks8n7PyoKKLxAap3WtZEcGw==", "trip"=>{"location"=>"Hanoi", "time"=>"Soon", "travel"=>"Flight", "description"=>"Summer Holiday"}, "commit"=>"Save Trip"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "trips" ("location", "time", "travel", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["location", "Hanoi"], ["time", "Soon"], ["travel", "Flight"], ["description", "Summer Holiday"], ["created_at", "2017-06-02 01:27:46.755112"], ["updated_at", "2017-06-02 01:27:46.755112"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/trips/4
+Completed 302 Found in 23ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/trips/4" for 127.0.0.1 at 2017-06-02 02:27:46 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 30.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2017-06-02 02:27:48 +0100
+Processing by TripsController#index as HTML
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 46ms (Views: 39.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/1/edit" for 127.0.0.1 at 2017-06-02 02:27:50 +0100
+Processing by TripsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/edit.html.erb within layouts/application
+  Rendered trips/edit.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 48ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2017-06-02 02:27:52 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2017-06-02 02:29:15 +0100
+Processing by TripsController#index as HTML
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 45ms (Views: 40.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/4/edit" for 127.0.0.1 at 2017-06-02 02:29:16 +0100
+Processing by TripsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering trips/edit.html.erb within layouts/application
+  Rendered trips/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trips/4" for 127.0.0.1 at 2017-06-02 02:29:33 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 26.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2017-06-02 02:29:35 +0100
+Processing by TripsController#index as HTML
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 46ms (Views: 41.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2017-06-02 02:29:36 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 39ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trips/2/edit" for 127.0.0.1 at 2017-06-02 02:29:37 +0100
+Processing by TripsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.1ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering trips/edit.html.erb within layouts/application
+  Rendered trips/edit.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2017-06-02 02:29:39 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2017-06-02 02:32:40 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2017-06-02 02:33:38 +0100
+Processing by TripsController#index as HTML
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/2/edit" for 127.0.0.1 at 2017-06-02 02:33:40 +0100
+Processing by TripsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering trips/edit.html.erb within layouts/application
+  Rendered trips/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/trips/2" for 127.0.0.1 at 2017-06-02 02:33:47 +0100
+Processing by TripsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OpKfI5KppxYRiWNN4SGuDj98LB7N6CA2hzoqZxIFGIq4Hc/4ibl+lIpGKGvg841gnfYCfFFFzNu9M588nv2grw==", "trip"=>{"location"=>"London", "time"=>"tomorrow", "travel"=>"tube", "description"=>"Haha"}, "commit"=>"Update Trip", "id"=>"2"}
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "trips" SET "time" = ?, "updated_at" = ? WHERE "trips"."id" = ?[0m  [["time", "tomorrow"], ["updated_at", "2017-06-02 01:33:47.443258"], ["id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/trips/2
+Completed 302 Found in 10ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2017-06-02 02:33:47 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.1ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2017-06-02 02:33:49 +0100
+Processing by TripsController#index as HTML
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 40ms (Views: 35.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/2/edit" for 127.0.0.1 at 2017-06-02 02:33:51 +0100
+Processing by TripsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering trips/edit.html.erb within layouts/application
+  Rendered trips/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 38ms (Views: 33.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/trips/2" for 127.0.0.1 at 2017-06-02 02:33:53 +0100
+Processing by TripsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+o7MFi3qz0ImobRZLP9Xw6hEpiZNNrzMDHuBPMa2Jf94AZzNNvoWwL1u/38tLXStCs6IRNGbUCE2cjRnSk6d2g==", "trip"=>{"location"=>"London", "time"=>"tomorrow", "travel"=>"tube", "description"=>"Haha"}, "commit"=>"Update Trip", "id"=>"2"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/trips/2
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/2" for 127.0.0.1 at 2017-06-02 02:33:53 +0100
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (0.1ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2017-06-02 02:33:54 +0100
+Processing by TripsController#index as HTML
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+

@@ -6,6 +6,16 @@ class TripsController < ApplicationController
   def new
   end
 
+  def edit
+    @trip = Trip.find(params[:id])
+  end
+
+  def update
+    @trip = Trip.find(params[:id])
+    @trip.update(trip_params)
+    redirect_to @trip
+  end
+
   def show
     @trip = Trip.find(params[:id])
   end
