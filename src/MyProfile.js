@@ -13,8 +13,20 @@ class MyProfile extends Component {
     render() {
         return (
             <div>
-                My Profile
+                <div>
+                    Name: Joe Black
+                </div>
+                <div>
+                    Country: UK
+                </div>
+                <div>
+                    Age: 19
+                </div>
+                <div>
+                    Email: joeblack@mail.com
+                </div>
             </div>
+
         );
     }
 }

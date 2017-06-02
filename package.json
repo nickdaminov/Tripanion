@@ -15,7 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "node test.js && zuul --ui tape --local 9966 -- test.js",
+    "ci": "node test.js",
     "eject": "react-scripts eject"
   }
 }
