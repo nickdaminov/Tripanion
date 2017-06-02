@@ -11,23 +11,21 @@ import MyProfile from "./MyProfile"
 import MyMatches from "./MyMatches"
 import Home from "./Home"
 import Search from "./Search"
+
 class App extends Component {
   render() {
       return(
           <Router>
               <div  className="App">
-                  <div className="App-header">
+                  <div className="topnav" id="myTopnav">
+
                       <h2>Tripanion</h2>
-                      <ul>
-                          <li><Link to="/">Home</Link></li>
-                          <li><Link to="/profile">My Profile</Link></li>
-                          <li><Link to="/matches">My Trips</Link></li>
-                          <li><Link to="/search">Search Trip</Link></li>
+                      <Link to="/">Home</Link>
+                      <Link to="/profile">My Profile</Link>
+                      <Link to="/matches">My Trips</Link>
+                      <Link to="/search">Search Trip</Link>
 
-                      </ul>
                   </div>
-
-                  <hr/>
 
                   <Route exact path="/" component={Home}/>
                   <Route path="/profile" component={MyProfile}/>

@@ -2,13 +2,12 @@ import React from 'react';
 import Trip from './Trip';
 
 const TripList = (props) => {
-    const trips = props.trips.map((trip) => {
-
+    const tripElems = props.trips.map((trip) => {
+        return <Trip key={trip.id}  />
     });
 
     return (
-        <ul>{trips}</ul>
-    );
+        <div className="trip-list">{tripElems}</div>    );
 };
 
 export default TripList;

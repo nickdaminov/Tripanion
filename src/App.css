@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.Home {
+  text-align: left;
+}
+
 .MainScreenOptions {
   text-align: left;
 }
@@ -11,9 +15,38 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #44edc0;
   height: 150px;
   padding: 20px;
+  color: white;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #44edc0;
+  color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
   color: white;
 }
 
