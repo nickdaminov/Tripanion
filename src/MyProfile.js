@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './mainComponent.css'
 
 class MyProfile extends Component {
     constructor() {
@@ -12,7 +13,7 @@ class MyProfile extends Component {
 
     render() {
         return (
-            <div>
+            <div className="main">
                 <div>
                     Name: Joe Black
                 </div>

@@ -3,6 +3,7 @@ import './App.css';
 import SearchBar from './search/SearchBar'
 import TripList from './search/TripList'
 import request from 'superagent';
+import './mainComponent.css'
 
 class Search extends Component {
     constructor() {
@@ -21,7 +22,7 @@ class Search extends Component {
     };
     render() {
         return (
-            <div>
+            <div className="main">
                 <div>
                     <SearchBar onTermChange={this.handleChange} />
                     <TripList trips={this.state.trips} />

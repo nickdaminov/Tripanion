@@ -1,4 +1,4 @@
 langauge: node_js
 node_js:
  - "stable"
-script: npm run ci
+script: npm run test
