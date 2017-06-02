@@ -1,4 +1,4 @@
-<h1>Having I new Idea for a trip ? It starts here </h1>
+<h1>Having a new Idea for a trip ? It starts here </h1>
 
 <%= form_for :trip, url: trips_path do |f| %>
   <p>
@@ -25,3 +25,6 @@
     <%= f.submit %>
   </p>
 <% end %>
+
+<%= link_to 'Back to Trip List', trips_path,
+    data: { confirm: 'Going back to Trip List will discard creating a new trip. Do you want to proceed ?' } %>
