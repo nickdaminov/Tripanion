@@ -6,16 +6,20 @@ import './mainComponent.css'
 class MyProfile extends Component {
     constructor() {
         super();
-        this.state = {
+       /* this.state = {
+            name: this.props.name,
+            country: this.props.country,
+            age: this.props.age,
+            email: this.props.email
         };
-
+*/
     }
 
     render() {
         return (
             <div className="main">
                 <div>
-                    Name: Joe Black
+                    Name: Nick
                 </div>
                 <div>
                     Country: UK
