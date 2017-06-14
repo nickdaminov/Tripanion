@@ -9,6 +9,9 @@
     "react-router": "^4.1.1",
     "superagent": "^3.5.2"
   },
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha.js"
+  },
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
