@@ -9,9 +9,9 @@ describe('User module', () => {
     it('should export a function', () => {
       // expect(User.getUserById).to.be.a('function')
       assert.equal(1, 1);
-    })
-  })
-})
+    });
+  });
+});
 //
 //describe('User Model', function() {
 //  it('')
