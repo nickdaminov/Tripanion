@@ -1,8 +1,5 @@
 // const User = require('/models/user');
-// const config = require('../config/database');
-// const expect = require('chai').expect
 var chai = require('chai');
-
 var assert = chai.assert;
 describe('User module', function() {
   describe('"getUserById"', function() {
